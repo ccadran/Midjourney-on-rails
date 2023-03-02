@@ -1,0 +1,32 @@
+<div id="<%= dom_id voiture %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nom:</strong>
+    <%= voiture.nom %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Image:</strong>
+    <img src="<%= voiture.image %>">
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= voiture.description %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Modele:</strong>
+    <%= voiture.modele %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Lieu:</strong>
+    <%= voiture.lieu %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this voiture", voiture, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this voiture', edit_voiture_path(voiture), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
