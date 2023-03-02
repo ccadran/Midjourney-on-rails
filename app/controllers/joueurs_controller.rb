@@ -6,6 +6,13 @@ class JoueursController < ApplicationController
     @joueurs = Joueur.all
   end
 
+
+  def application
+    @joueurs = Joueur.all
+  end
+
+
+
   # GET /joueurs/1 or /joueurs/1.json
   def show
   end
