@@ -36,3 +36,7 @@
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
+
+# Ignore application.tailwind.css file
+/app/assets/stylesheets/application.tailwind.css
